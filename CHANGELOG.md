@@ -2,6 +2,182 @@
 
 All notable changes to this project will be documented in this file.
 
+## [9.0.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.5.0...v9.0.0) (2023-12-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add `delete_automated_backups` and update MSV of AWS provider to `v5.26` to support (#415)
+
+### Features
+
+* Add `delete_automated_backups` and update MSV of AWS provider to `v5.26` to support ([#415](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/415)) ([c9e4933](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/c9e4933177c6d972dca6c45be0178dc2928e42b1))
+
+## [8.5.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.4.0...v8.5.0) (2023-10-09)
+
+
+### Features
+
+* Add RDS cluster activity stream ([#407](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/407)) ([783c686](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/783c6864d4fe0d610a62d00d5ff8e5edb08a008a))
+
+## [8.4.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.3.1...v8.4.0) (2023-10-09)
+
+
+### Features
+
+* Enable db_parameter_group_name per instance ([#410](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/410)) ([d34e83c](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/d34e83c6ecfbf7625ca4f50f9a3d703a8fd39e9a))
+
+### [8.3.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.3.0...v8.3.1) (2023-06-07)
+
+
+### Bug Fixes
+
+* Tag Application AutoScaling target ([#389](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/389)) ([04ffe1c](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/04ffe1ce2675eb1b230fc52f7a67473ae08ac019))
+
+## [8.3.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.2.0...v8.3.0) (2023-06-01)
+
+
+### Features
+
+* Enable support for v5.0 of the AWS provider ([#385](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/385)) ([959228c](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/959228c5fa33277139432fe3a858013b2b93c3ab))
+
+## [8.2.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.1.1...v8.2.0) (2023-05-24)
+
+
+### Features
+
+* Upgrade aws provider version and update examples ([#382](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/382)) ([b792d84](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/b792d84b68086e1458fb9ef0ee07dc982510f4ed))
+
+### [8.1.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.1.0...v8.1.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* Tag security group with correct name ([#380](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/380)) ([71d23db](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/71d23db753184f416e06c0d0c6f4f73ec8d95184))
+
+## [8.1.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.0.2...v8.1.0) (2023-05-12)
+
+
+### Features
+
+* Ability to set custom `security_group_name` ([#379](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/379)) ([67edcaa](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/67edcaafe8b08226929a0cc989b1fbc39fcff8d1))
+
+### [8.0.2](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.0.1...v8.0.2) (2023-04-11)
+
+
+### Bug Fixes
+
+* Allow setting `master_username` when using `manage_master_user_password` ([#369](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/369)) ([f48f824](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/f48f824d76ff1970cff91d336349f956556c75b2))
+
+### [8.0.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v8.0.0...v8.0.1) (2023-04-10)
+
+
+### Bug Fixes
+
+* Variable description for `master_username` requirements ([#367](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/367)) ([d0435c6](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/d0435c6eaee5e28375bf241362fd7dd4b40e1aca))
+
+## [8.0.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.7.1...v8.0.0) (2023-04-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Terraform MSV increased to 1.0, consolidate security group rules under one generic resource, add support for managed master password (#335)
+
+### Features
+
+* Terraform MSV increased to 1.0, consolidate security group rules under one generic resource, add support for managed master password ([#335](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/335)) ([e054f77](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/e054f77c700128c206b0912c51712313981d6fae))
+
+### [7.7.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.7.0...v7.7.1) (2023-04-04)
+
+
+### Bug Fixes
+
+* Postgres port conditional adjustment ([#362](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/362)) ([980ce16](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/980ce164cc66d5b7ef1dca02cc64f47bc3ab4e66))
+
+## [7.7.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.6.2...v7.7.0) (2023-03-06)
+
+
+### Features
+
+* Add support for creating CloudWatch log groups ([#346](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/346)) ([40cef84](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/40cef841e42cffa9c379397a4294f7a5650c4993))
+
+### [7.6.2](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.6.1...v7.6.2) (2023-02-07)
+
+
+### Bug Fixes
+
+* Add explicit default value for `engine_mode` used in conditiona logic internally ([#347](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/347)) ([7ffa33f](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/7ffa33f82603830713ba31aa2d18f421a0abf4d8))
+
+### [7.6.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.6.0...v7.6.1) (2023-02-06)
+
+
+### Bug Fixes
+
+* Use `create_before_destroy` lifecycle on parameter groups to support major version upgrades ([#354](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/354)) ([97c417a](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/97c417aeddf9b5e51183f50a3fa1fe2a9be0a2c9))
+
+## [7.6.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.5.1...v7.6.0) (2022-10-19)
+
+
+### Features
+
+* Do not create `snapshot_identifier` when `skip_final_snapshot = true` ([#332](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/332)) ([7ce592e](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/7ce592ea90caea4adc8a0d3e74e83a478b17b374))
+
+### [7.5.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.5.0...v7.5.1) (2022-09-12)
+
+
+### Bug Fixes
+
+* Update miminum provider version required for current arguments supported ([#324](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/324)) ([5f61877](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/5f61877726774ce49d9bfdc77f9934e33eb3f06e))
+
+## [7.5.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.4.2...v7.5.0) (2022-09-12)
+
+
+### Features
+
+* Add support for network_type argument ([#322](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/322)) ([e54fbd7](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/e54fbd775ebd2c26ce6e61012b5cf52b1def1640))
+
+### [7.4.2](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.4.1...v7.4.2) (2022-09-10)
+
+
+### Bug Fixes
+
+* Correct DB instance parameter group used when users do not create one nor provide the name of existing, will use default ([#321](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/321)) ([3a5ba14](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/3a5ba1441905f6e100a129f37f421f45e0d2ec1f))
+
+### [7.4.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.4.0...v7.4.1) (2022-09-08)
+
+
+### Bug Fixes
+
+* Correct DB clsuter parameter group used when users do not create one nor provide the name of existing, will use default ([#320](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/320)) ([c1e7002](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/c1e7002c1275d80ee8b0a3a11028735191e1d234))
+
+## [7.4.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.3.0...v7.4.0) (2022-09-07)
+
+
+### Features
+
+* Fix serverless v2 engine and add missing resource arguments ([#317](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/317)) ([2d87320](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/2d87320cbc49dbb2201b7871ba010bbc5a8d6c2b))
+
+## [7.3.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.2.2...v7.3.0) (2022-08-17)
+
+
+### Features
+
+* Support feature to create parameter group for aws-rds-aurora cluster and instances ([#307](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/307)) ([45d7bf7](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/45d7bf742e1ffe9cc49b0e9e3e5be6e89414640a))
+
+### [7.2.2](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.2.1...v7.2.2) (2022-07-11)
+
+
+### Bug Fixes
+
+* InvalidParameterCombination: Cannot find version 5.7.12 for aurora-mysql ([#303](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/303)) ([bcbb386](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/bcbb386e0854bc1968c271bb3f49a5a106fbcec9))
+
+### [7.2.1](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.2.0...v7.2.1) (2022-06-27)
+
+
+### Bug Fixes
+
+* SecurityGroup - create_before_destroy ([#301](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/issues/301)) ([ceb91fb](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/commit/ceb91fb0153aa2cd92d3bfa67c458998901530a0))
+
 ## [7.2.0](https://github.com/terraform-aws-modules/terraform-aws-rds-aurora/compare/v7.1.0...v7.2.0) (2022-06-20)
 
 
